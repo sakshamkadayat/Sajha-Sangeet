@@ -1,39 +1,48 @@
 .slider-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 90px auto;
-    overflow: hidden; 
-    position: relative;
-  }
-
-  .slide img {
-    max-width: 100%;
-    width: 100%;
-    height: 500px; 
-    object-fit: cover;
-  }
-  
-  
-.over-lay{
-    position: absolute;
-    top: 150px;
-    left: 30px;
-    height: 200px;
-    width: 50%;
-    font-size: 1.2rem;
-   
-
-}
-.over-lay h1{
-    color: #fff;
-    width: 100%;
-}
-.over-lay p{
-    color: #fff;
-
+  width: 100%;
+  max-width: 100%;
+  margin-top: 90px;
+  overflow: hidden;
+  position: relative;
 }
 
-/* CSS */
+.slide img {
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.over-lay {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  height: 300px;
+  width: 35%;
+  font-size: 1.2rem;
+  padding: 35px;
+  backdrop-filter: blur(3px);
+  backdrop-filter: brightness(80%);
+  border-radius: 15px;
+}
+
+.over-lay h1 {
+  color: #fff;
+  width: 100%;
+  text-align: start;
+
+
+
+}
+
+.over-lay p {
+  color: #fff;
+  text-align: start;
+
+
+}
+
 .button-58 {
   align-items: center;
   background-color: #06f;
@@ -43,7 +52,7 @@
   cursor: pointer;
   display: inline-flex;
   fill: #000;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 48px;
@@ -59,7 +68,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-top: 12px;
+  margin-top: 22px;
+  margin-right: 400px;
 }
 
 .button-58:focus {
@@ -78,21 +88,85 @@
   fill: #06f;
 }
 
-@media (min-width: 768px) {
+.Aboutus-main-container {
+  background-color: #fff;
+  border: 2px solid rgb(3, 3, 3);
+  height: 600px;
+  
+}
+.about-wapper{
+ display: flex;
+ gap: 25px;
+ padding: 80px;
+  border: 2px solid rgb(12, 12, 12);
+}
+.about-wapper img {
+  height: 350px;
+  border-radius: 12px;
+
+}
+.blue-checkmark{
+  color: #FF7703;
+  font-weight: 900;
+  font-size: 1.3rem;
+  
+}
+
+/* @media (min-width: 768px) {
   .button-58 {
     min-width: 170px;
   }
-}
-  
-  @media screen and (max-width: 768px) {
-    .over-lay {
-      font-size: 0.8rem;
-      width: 60%;
-    }
-    .over-lay p {
-        width: 100%;
-        margin-top: 12px;
-    }
+} */
+
+@media screen and (max-width: 768px) {
+  .over-lay {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-left: -55px;
+  }
+
+  .over-lay p {
+    width: 100%;
+    margin-top: 12px;
+    font-size: 0.9rem;
+  }
+
+  .slide img {
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .button-58 {
+
+    font-size: 15px;
+    font-weight: 300;
+    height: 40px;
+    margin-top: 22px;
+    margin-right: 350px;
+  }
+  .Aboutus-main-container {
+    height: auto;
+  }
+
+  .about-wapper {
+    flex-direction: column;
+    gap: 5vw;
+    border: 2px solid green;
+  }
+  .about-wapper h1{
+    font-size: 1.8rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
   
- 
+  .about-wapper img {
+    height: 50vw;
+    width: 75vw;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+}

@@ -107,5 +107,6 @@ nav {
 	}
     header  img{
         height: 80px;
+		margin-left: 0px;
     }
 }
