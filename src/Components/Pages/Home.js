@@ -33,19 +33,45 @@ const Home = () => {
             </Carousel>
         </div>
         <div className='Aboutus-main-container'>
-        <div className='about-wapper'>
-           <img src={About} alt='image'/>
-           <div className='about-content'>
-           <p style={{fontSize:'1.4rem'}}>About us</p>
-           <h1>Learn The Music From The<br/>Core & Become Mastery</h1>
-           <p>Welcome to Sajha Sangeet, where we delve into the essence of music, crafting mastery from the core. Passionate about diverse melodies, we celebrate the artistry that unites us all. Join us in a harmonious journey through the soulful world of Sajha Sangeet.</p>
-           <p><span class="blue-checkmark">✓</span>Basic Knowledge</p>
-           <p><span class="blue-checkmark">✓</span>Instruments</p>
-           <p><span class="blue-checkmark">✓</span>Vocal Lession</p>
-           <p><span class="blue-checkmark">✓</span>Industry Lession</p>
+            <div className='about-wapper'>
+                <img src={About} alt='image' />
+                <div className='about-content'>
+                    <p style={{ fontSize: '1.4rem' }}>About us</p>
+                    <h1>Learn The Music From The<br />Core & Become Mastery</h1>
+                    <p>Welcome to Sajha Sangeet, where we delve into the essence of music, crafting mastery from the core. Passionate about diverse melodies, we celebrate the artistry that unites us all. Join us in a harmonious journey through the soulful world of Sajha Sangeet.</p>
+                    <p><span style={{ marginRight: '12px' }} class="blue-checkmark">✓</span>Basic Knowledge</p>
+                    <p><span style={{ marginRight: '12px' }} class="blue-checkmark">✓</span>Instruments</p>
+                    <p><span style={{ marginRight: '12px' }} class="blue-checkmark">✓</span>Vocal Lession</p>
+                    <p><span style={{ marginRight: '12px' }} class="blue-checkmark">✓</span>Industry Lession</p>
+                    <button className='button-58'>Aboutus</button>
+                </div>
+            </div>
+        </div>
+        <div className='why-choose-us'>
+            <div className='heading-section'>
+            <p>Why Choose Us</p>
+            <h1>We Give You The Best Facilities to Learning</h1>
+            </div>
+            <div className='why-div-wrapper'>
+                <div className='div-1'>
+                    <h3>test</h3>
+                    <p>teststtstst</p>
+                </div>
+                <div className='div-2'>
+                    <h3>test</h3>
+                    <p>teststtstst</p>
+                </div>
+                <div className='div-3'>
+                    <h3>test</h3>
+                    <p>teststtstst</p>
+                </div>
+                <div className='div-4'>
+                    <h3>test</h3>
+                    <p>teststtstst</p>
+                </div>
 
-           </div>
-           </div>
+            </div>
+
         </div>
     </>
     );
