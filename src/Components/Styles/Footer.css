@@ -1,0 +1,67 @@
+/* Container Styles */
+.container-main-footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Shared Styles for Links and Icons */
+.footer-section p {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icons */
+.footer-section p svg {
+    height: 3vh;
+    color: #0E264B;
+    margin-right: 12px;
+}
+
+/* Heading Styles */
+.footer-section h3 {
+    color: #0E264B;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 220px;
+}
+
+/* Footer Link Styling */
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #3797D3;
+}
+
+/* Copyright Section */
+.copyright {
+    background-color: #0E264B;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    height: 10vh;
+    /* margin-top: 15px; */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .container-main-footer {
+        flex-direction: column;
+    }
+
+}

@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faMusic, faChalkboardTeacher, faMicrophone  } from '@fortawesome/free-solid-svg-icons';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../Styles/Home.css';
@@ -8,15 +6,11 @@ import image1 from '../../Images/group-of-homeschooling-children-with-teacher-ha
 import image2 from '../../Images/school-boy-playing-synthesizer-at-home.jpg';
 import image3 from '../../Images/music.jpg';
 import About from "../../Images/dfdf.jpg";
+import Class from './Class';
+import Footer from '../Common/Footer';
 
 const Home = () => {
     const images = [image1, image2, image3];
-    const reasons = [
-        { title: 'Free Equipment', icon: faMicrophone  },
-        { title: 'High Tech', icon: faLaptopCode },
-        { title: 'Music Studio', icon: faMusic },
-        { title: 'Expert Teacher', icon: faChalkboardTeacher },
-    ];
 
     return (
         <>
@@ -31,7 +25,7 @@ const Home = () => {
                 >
                     {images.map((image, index) => (
                         <div key={index} className="slide">
-                            <img src={image} alt={`Image ${index + 1}`} />
+                            <img src={image} alt="sliders" />
                             <div className='over-lay'>
                                 <h1>Learn The Music <br /> From The <span style={{ color: "#FF7703" }}>Masters</span></h1>
                                 <p>Unlock the Masters' Melodies: Your Musical Journey Starts Here</p>
@@ -43,7 +37,7 @@ const Home = () => {
             </div>
             <div className='Aboutus-main-container'>
                 <div className='about-wapper'>
-                    <img src={About} alt='image' />
+                    <img src={About} alt='aboutus' />
                     <div className='about-content'>
                         <p style={{ fontSize: '1.4rem' }}>About us</p>
                         <h1>Learn The Music From The<br />Core & Become Mastery</h1>
@@ -56,20 +50,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='why-choose-us'>
-                <div className='heading-section'>
-                    <p>Why Choose Us</p>
-                    <h1>We Give You The Best Facilities for Learning</h1>
-                </div>
-                <div className='why-div-wrapper'>
-                    {reasons.map((reason, index) => (
-                        <div key={index} className={`div-${index + 1}`}>
-                            <FontAwesomeIcon icon={reason.icon} style={{ marginRight: '8px', marginBottom: '15px', fontSize: '40px', color: '#FF7703' }} />
-                            <h3>{reason.title}</h3>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <Class />
+            <Footer/>
         </>
     );
 };

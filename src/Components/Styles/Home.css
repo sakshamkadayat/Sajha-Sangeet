@@ -97,78 +97,66 @@
   /* border: 2px solid rgb(3, 3, 3); */
   height: 550px;
   width: 100%;
-  
+
 }
 
-.about-wapper{
+.about-wapper {
   display: flex;
   gap: 25px;
   padding: 80px;
-   /* border: 2px solid rgb(12, 12, 12); */
-   width: 80%;
- }
- .about-wapper h1{
+  /* border: 2px solid rgb(12, 12, 12); */
+  width: 80%;
+}
+
+.about-wapper h1 {
   margin-top: 12px;
   margin-bottom: 12px;
 }
- .about-wapper img {
-   height: 350px;
-   border-radius: 12px;
- 
- }
- .blue-checkmark{
-   color: #FF7703;
-   font-weight: 900;
-   font-size: 1.3rem;
-   
- }
-/* Why section start */
-.why-choose-us{
-  height: 300px;
-  width: 100%;
-  margin-bottom: 122px;
-  background-image: url(../../Images/bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  color: #fff;
-}
-.heading-section{
-/* border: 1px solid; */
-height: 150px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+
+.about-wapper img {
+  height: 350px;
+  border-radius: 12px;
+
 }
 
-.div-1,.div-2,.div-3,.div-4{
+.blue-checkmark {
+  color: #FF7703;
+  font-weight: 900;
+  font-size: 1.3rem;
+
+}
+
+
+.our-class-main-container {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 50px;
+}
+
+
+.class-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.ClassA,
+.ClassB,
+.ClassC,
+.ClassD{
+  /* border: 1px solid blue; */
+  margin-top: 55px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 300px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
-  width: 250px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 5px;
+  border-radius: 12px;
 }
-
-.why-div-wrapper{
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  height: 250px;
-  width:100%;
-  top: 180px;
-  /* margin-bottom: -150px; */
-  color: #000;
-  /* border: 5px solid rebeccapurple; */
-}
-
 
 @media screen and (max-width: 768px) {
   .over-lay {
@@ -198,6 +186,7 @@ justify-content: center;
     margin-top: 22px;
     margin-right: 350px;
   }
+
   .Aboutus-main-container {
     height: auto;
   }
@@ -209,12 +198,13 @@ justify-content: center;
     gap: 5vw;
     width: 100%;
   }
-  .about-wapper h1{
+
+  .about-wapper h1 {
     font-size: 1.8rem;
     margin-top: 12px;
     margin-bottom: 12px;
   }
-  
+
   .about-wapper img {
     height: 50vw;
     width: 75vw;
@@ -223,26 +213,10 @@ justify-content: center;
   .about-content {
     width: 100%;
   }
-  .why-choose-us{
-    width: 100%;
-    height: 350px;
 
-  }
-  .div-1,.div-2,.div-3,.div-4{
-    width: 60%;
-    height: 250px;
-  }
-  .why-div-wrapper{
-    top: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .heading-section{
-    /* border: 1px solid; */
-    height: 150px;
-    width: 100%;
-    font-size: 0.9rem;
-    }
 
+
+  .class-card {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
