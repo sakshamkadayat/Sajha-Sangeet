@@ -131,6 +131,11 @@
   /* border: 1px solid red; */
   text-align: center;
   padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -141,6 +146,8 @@
   align-content: center;
   align-items: center;
   justify-items: center;
+  /* border: 4px solid red; */
+  width:77%
 }
 .ClassA,
 .ClassB,
@@ -149,8 +156,8 @@
   /* border: 1px solid blue; */
   margin-top: 55px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
