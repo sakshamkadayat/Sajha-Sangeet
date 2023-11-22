@@ -51,6 +51,16 @@ const Home = () => {
                 </div>
             </div>
             <Class />
+            <div className="google-maps-iframe">
+                <iframe
+                    title="Google Maps"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d337.72380383568816!2d80.55356252834318!3d28.810787044867695!2m3!1f270!2f39.10172897527929!3f0!3m2!1i1024!2i768!4f35!5e1!3m2!1sen!2snp!4v1700668899889!5m2!1sen!2snp"
+                    style={{ border: '0' }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
             <Footer/>
         </>
     );
