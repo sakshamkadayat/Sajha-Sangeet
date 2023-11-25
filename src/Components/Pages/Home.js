@@ -8,6 +8,7 @@ import image3 from '../../Images/music.jpg';
 import About from "../../Images/dfdf.jpg";
 import Class from './Class';
 import Footer from '../Common/Footer';
+import CoursesList from './CoursesList';
 
 const Home = () => {
     const images = [image1, image2, image3];
@@ -51,6 +52,7 @@ const Home = () => {
                 </div>
             </div>
             <Class />
+            <CoursesList/>
             <div className="google-maps-iframe">
                 <iframe
                     title="Google Maps"

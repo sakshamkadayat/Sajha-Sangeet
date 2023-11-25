@@ -1,0 +1,21 @@
+.main-routine-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBFBFB;
+    padding: 45px;
+}
+.main-routine-container img{
+    height: 500px;
+    /* width: 100%; */
+}
+
+@media screen and (max-width: 768px){
+    .main-routine-container img{
+        height: 250px;
+    }
+    .main-routine-container h1{
+        font-size: 1.3rem;
+    }
+}
