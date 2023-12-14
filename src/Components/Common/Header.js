@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../Images/Sajhabg.png";
 import "../Styles/Header.css";
+import { Link } from "react-router-dom";
+
 
 function Header() {
     const navRef = useRef();
@@ -13,11 +15,11 @@ function Header() {
         <header>
             <img src={Logo} alt="logo" />
             <nav ref={navRef} >
-                <a href='/home' >Home</a>
-                <a href="/ourservice" >About Us</a>
-                <a href="/whatwedo" >Lessons</a>
-                <a href="/aboutus" >Contact Us</a>
-                <a href="/contact"  >Blog</a>
+                <Link to='/home' >Home</Link>
+                <Link to="/aboutus" >About Us</Link>
+                <Link to="/lessons" >Lessons</Link>
+                <Link to="/contact" >Contact Us</Link>
+                <Link to="/Blog"  >Blog</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

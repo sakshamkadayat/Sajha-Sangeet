@@ -26,7 +26,8 @@ header {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
-	position: fixed;
+	/* position: fixed; */
+	position: sticky;
 	top: 0;
 	/* overflow: hidden; */
 	background-color: hsla(0, 0%, 95.3%, 0.75);

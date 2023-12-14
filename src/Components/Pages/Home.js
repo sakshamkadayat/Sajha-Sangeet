@@ -7,7 +7,6 @@ import image2 from '../../Images/school-boy-playing-synthesizer-at-home.jpg';
 import image3 from '../../Images/music.jpg';
 import About from "../../Images/dfdf.jpg";
 import Class from './Class';
-import Footer from '../Common/Footer';
 import CoursesList from './CoursesList';
 
 const Home = () => {
@@ -22,7 +21,8 @@ const Home = () => {
                     showIndicators={false}
                     showThumbs={false}
                     autoPlay={true}
-                    interval={1000}
+                    interval={2000}
+                    infiniteLoop= {true}
                 >
                     {images.map((image, index) => (
                         <div key={index} className="slide">
@@ -63,7 +63,6 @@ const Home = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
-            <Footer/>
         </>
     );
 };
