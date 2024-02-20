@@ -13,6 +13,7 @@ function Routing() {
         <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Outer />}>
+                    <Route path='/' element={<Home/>}></Route>
                         <Route path='/home' element={<Home/>}></Route>
                         <Route path='/aboutus' element={<About/>}></Route>
                         <Route path='/Gallery' element={<Gallery/>}></Route>
