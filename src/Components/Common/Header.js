@@ -17,9 +17,9 @@ function Header() {
             <nav ref={navRef} >
                 <Link to='/home' >Home</Link>
                 <Link to="/aboutus" >About Us</Link>
-                <Link to="/lessons" >Lessons</Link>
+                <Link to="/Gallery" >Gallery</Link>
                 <Link to="/contact" >Contact Us</Link>
-                <Link to="/Blog"  >Blog</Link>
+                
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

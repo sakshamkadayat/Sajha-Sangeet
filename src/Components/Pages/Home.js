@@ -2,10 +2,10 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../Styles/Home.css';
-import image1 from '../../Images/group-of-homeschooling-children-with-teacher-having-music-lesson-indoors-coronavirus-concept-.jpg';
-import image2 from '../../Images/school-boy-playing-synthesizer-at-home.jpg';
+import image1 from '../../Images/c2.jpeg';
+import image2 from '../../Images/c1.jpeg';
 import image3 from '../../Images/music.jpg';
-import About from "../../Images/dfdf.jpg";
+import About from "../../Images/about.jpg";
 import Class from './Class';
 import CoursesList from './CoursesList';
 
@@ -53,6 +53,7 @@ const Home = () => {
             </div>
             <Class />
             <CoursesList/>
+
             <div className="google-maps-iframe">
                 <iframe
                     title="Google Maps"

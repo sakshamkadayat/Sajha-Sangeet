@@ -1,0 +1,20 @@
+.pre-loader-for-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    min-height: 70vh;
+    
+  
+  }
+  .pre-loader-for-all p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    background: linear-gradient(90deg, rgba(46,236,25,1) 0%, rgba(47,65,233,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
